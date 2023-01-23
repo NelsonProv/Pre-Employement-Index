@@ -126,7 +126,7 @@ li .a {
 }
 
 #sidebar::-webkit-scrollbar {
-    width: 5px;
+    width: 15px;
     border-radius: 10px;
     background-color: rgb(238, 238, 238);
     display: none;
@@ -280,6 +280,7 @@ nav ul {
     width: 100%;
     z-index: 9;
     position: relative;
+    margin-top: 20px;
 }
 
 .main-content {
@@ -623,6 +624,8 @@ form .fields .input-field {
     border: none;
 }
 
+/* Emergency Page */
+
 .emergency .form-control {
     height: 35px;
     border: none;
@@ -646,6 +649,8 @@ form .fields .input-field {
     align-items: center;
     justify-items: center;
 }
+
+/* Emergency End */
 
 .form-control:focus {
     background-color: rgb(255, 255, 255);
@@ -708,6 +713,7 @@ form .fields .input-field {
     padding: 15px 32px;
     margin-left: 300px;
 }
+
 .btnn3 {
     position: relative;
     min-height: 30px;
@@ -722,6 +728,7 @@ form .fields .input-field {
     padding: 15px 32px;
     margin-left: 350px;
 }
+
 .btnn3a {
     position: relative;
     min-height: 30px;
@@ -737,12 +744,6 @@ form .fields .input-field {
     margin-left: 350px;
 }
 
-
-.PreEmployment .input-fieldName input {
-    border-color: red;
-    border-radius: 10px;
-}
-
 .container p,
 h4,
 h5,
@@ -750,27 +751,7 @@ h6 {
     color: rgb(7, 7, 7);
 }
 
-.PreEmployment table,
-th,
-tr,
-td {
-    color: black;
-    border: 1px solid black;
-    background-color: white;
-}
-
-.PreEmployment table input {
-    border: none;
-}
-
-/*.ConductAssessment .Validate {
-    width: 100%;
-    display: flex;
-    position: relative;
-    align-content: center;
-    justify-content: center;
-    margin-top: 10px;
-}*/
+/* ConductAssessment Pages */
 
 .ConductAssessment .Validate {
     width: 100%;
@@ -780,12 +761,6 @@ td {
     justify-content: center;
     margin-top: 10px;
 }
-
-/*.ConductAssessment .Validate input {
-    width: 150px;
-    height: 25px;
-    border-color: #8ac626;
-}*/
 
 .ConductAssessment .Validate input {
     width: 50%;
@@ -825,7 +800,58 @@ td {
     font-size: 12.5px;
 }
 
+/* Conduct Assessment 7 */
 
+.CA7_h6{
+margin-left: 500px;
+margin-top: -25px;
+}
+
+.CA7 .top .input-fieldName {
+    height: 50px;
+}
+
+.CA7 .top input {
+    width: 70%;
+    margin-left: 240px;
+    margin-top: -45px;
+}
+
+.CA7 .top label {
+    width: 15%;
+    position: absolute;
+    margin-top: 10px;
+    font-size: 12.5px;
+}
+
+.CA7 .top select {
+    width: 10%;
+    position: relative;
+    margin-left: 125px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.CA7 h6 {
+    margin-top: 15px;
+}
+
+.CA7 .top-form .input-fieldName{
+    height: 55px; 
+}
+
+.CA7 .top-form input {
+    width: 70%;
+    margin-left: 240px;
+    margin-top: 25px;
+}
+
+.CA7 .top-form label {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 12.5px;
+}
 
 
 /*=======================================================

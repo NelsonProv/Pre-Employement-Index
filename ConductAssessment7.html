@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Conduct Assessment Three</title>
+    <title>Conduct Assessment Seven</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!----css3---->
@@ -317,20 +317,105 @@
             <!--Main Content-->
             <div class="main-content">
                 <div class="container">
-                    <h5 class="conduct_subheading">Respiratory Questionnaire</h5>
-                    <p class="conduct_description">These questions concern how you have been feeling for the past 30
-                        days. Select an option for each question that best represents how you felt.</p>
+                    <h5 class="conduct_subheading">Skin Questionnaire</h5>
+                    <p class="conduct_description">Do you perform tasks in your work requiring: </p>
+
+                    <h6 class="CA7_h6">Describe</h6>
 
                     <form action="#">
                         <div class="form-first">
-                            <div class="ConductAssessment">
+                            <div class="ConductAssessment CA7">
 
                                 <div class="fields">
-                                    <div class=top-form>
+                                    <div class="top">
+
                                         <div class="input-fieldName">
-                                            <label for="Tired">How often have you felt tired <br> without no reason?
+                                            <label for="Chemicals">Exposure to chemicals: </label>
+                                            <select name="Chemicals" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                            <input type="text" required class="form-control">
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Fumes">Exposure to fumes and gases: </label>
+                                            <select name="Fumes" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                            <input type="text" required class="form-control">
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Substances">Exposure to harmful substances: </label>
+                                            <select name="Substances" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                            <input type="text" required class="form-control">
+                                        </div>
+
+                                    </div>
+
+                                    <h6>Symptoms</h6>
+                                    <p>Since your previous medical examination, have you had any of the following
+                                        symptoms either at work or home? (Do not include symptoms caused through
+                                        adverse weather)</p>
+
+                                    <div class="top-form">
+
+                                        <div class="input-fieldName">
+                                            <label for="Swelling">Redness/Swelling of hands</label>
+                                            <select name="Swelling" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Crackings">Crackings of skin on fingers/hands </label>
+                                            <select name="Crackings" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Blister">Blister on finger/hands</label>
+                                            <select name="Blister" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Flaking">Flaking or scaling on finger/hands</label>
+                                            <select name="Flaking" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Itching">Itching of finger/hands with skin <br>
+                                                crack or splits
                                             </label>
-                                            <select name="Tired" id="" class="form-control">
+                                            <select name="Itching" id="" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Likely">Likely</option>
                                                 <option value="Very Likely">Very Likely</option>
@@ -339,21 +424,11 @@
                                         </div>
 
                                         <div class="input-fieldName">
-                                            <label for="Nervous">How often do you feel nervous? </label>
-                                            <select name="Nervous" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Calm">How often did you feel nervous <br> that nothing could
-                                                calm you
-                                                down?
+                                            <label for="Sport">Sport, redness swelling of any other <br>
+                                                body part of your body exposed to <br>
+                                                substances
                                             </label>
-                                            <select name="Calm" id="" class="form-control">
+                                            <select name="Sport" id="" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Likely">Likely</option>
                                                 <option value="Very Likely">Very Likely</option>
@@ -362,19 +437,10 @@
                                         </div>
 
                                         <div class="input-fieldName">
-                                            <label for="Hopeless">How often do you feel hopeless?</label>
-                                            <select name="Hopeless" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Restless">How often do you feel restless <br> of fidgety?
+                                            <label for="Alcohol">Sitting quietly after lunch without <br>
+                                                alcohol
                                             </label>
-                                            <select name="Restless" id="" class="form-control">
+                                            <select name="Alcohol" id="" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Likely">Likely</option>
                                                 <option value="Very Likely">Very Likely</option>
@@ -383,21 +449,10 @@
                                         </div>
 
                                         <div class="input-fieldName">
-                                            <label for="Sit still">How often do you feel restless <br> that you could
-                                                not sit
-                                                still? </label>
-                                            <select name="Sit still" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Depressed">How often do you feel depressed?
+                                            <label for="Doctor">Have you seen a doctor regarding <br>
+                                                your skin condition
                                             </label>
-                                            <select name="Depressed" id="" class="form-control">
+                                            <select name="Doctor" id="" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Likely">Likely</option>
                                                 <option value="Very Likely">Very Likely</option>
@@ -406,10 +461,15 @@
                                         </div>
 
                                         <div class="input-fieldName">
-                                            <label for="Effort">How often do you feel that everything <br> was an
-                                                effort?
+                                            <label for="Explain">If yes, please explain:</label>
+                                            <input type="text" required class="form-control">
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Condition">Are any of the symptoms related <br>
+                                                to your working condition?
                                             </label>
-                                            <select name="Effort" id="" class="form-control">
+                                            <select name="Condition" id="" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Likely">Likely</option>
                                                 <option value="Very Likely">Very Likely</option>
@@ -418,10 +478,15 @@
                                         </div>
 
                                         <div class="input-fieldName">
-                                            <label for="Sad">How often did you feel so sad <br> that nothing could cheer
-                                                you up?
+                                            <label for="Explain">If yes, please explain:</label>
+                                            <input type="text" required class="form-control">
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Holiday">Do you experience these while not <br>
+                                                working or on holiday?
                                             </label>
-                                            <select name="Sad" id="" class="form-control">
+                                            <select name="Holiday" id="" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Likely">Likely</option>
                                                 <option value="Very Likely">Very Likely</option>
@@ -430,9 +495,39 @@
                                         </div>
 
                                         <div class="input-fieldName">
-                                            <label for="Worthless">How often do you feel worthless?
+                                            <label for="Explain">If yes, please explain:</label>
+                                            <input type="text" required class="form-control">
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Correct">I confirm that the responses given <br>
+                                                by me are correct
                                             </label>
-                                            <select name="Worthless" id="" class="form-control">
+                                            <select name="Correct" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Need">I believe I need/do not need
+                                            </label>
+                                            <select name="Need" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Likely">Likely</option>
+                                                <option value="Very Likely">Very Likely</option>
+                                                <option value="Not Likely">Not Likely</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Head">If, during the year, I perceive any <br>
+                                                one of the above symptoms I will <br>
+                                                inform my head of department
+                                            </label>
+                                            <select name="Head" id="" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Likely">Likely</option>
                                                 <option value="Very Likely">Very Likely</option>
@@ -464,44 +559,44 @@
                                         </div>
                                     </div>
 
+
                                 </div>
-
+                            </div>
                     </form>
+
+                    <!--Bottom of Page Button Navigation-->
+
+                    <button class="btnb">
+                        <a href="ConductAssessment1.htm5">Back</a>
+                    </button>
+                    <button class="btnn" onclick="">
+                        <a href="ConductAssessment2.html">Next</a>
+                    </button>
+
+
                 </div>
-
-                <!--Bottom of Page Button Navigation-->
-
-                <button class="btnb">
-                    <a href="ConductAssessment2.html">Back</a>
-                </button>
-                <button class="btnn" onclick="">
-                    <a href="ConductAssessment4.html">Next</a>
-                </button>
-
             </div>
-        </div>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="js/jquery-3.3.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery-3.3.1.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#content').toggleClass('active');
-            });
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#sidebarCollapse').on('click', function () {
+                        $('#sidebar').toggleClass('active');
+                        $('#content').toggleClass('active');
+                    });
 
-            $('.more-button,.body-overlay').on('click', function () {
-                $('#sidebar,.body-overlay').toggleClass('show-nav');
-            });
+                    $('.more-button,.body-overlay').on('click', function () {
+                        $('#sidebar,.body-overlay').toggleClass('show-nav');
+                    });
 
-        });
-    </script>
+                });
+            </script>
 
 </body>
 
