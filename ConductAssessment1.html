@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Conduct Assessment Ones</title>
+    <title>Conduct Assessment One</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!----css3---->
@@ -162,6 +162,9 @@
                     <li>
                         <a href="ConductAssessment7.html">Conduct Assessment Seven</a>
                     </li>
+                    <li>
+                        <a href="ConductAssessment8.html">Conduct Assessment Eight</a>
+                    </li>
                 </ul>
             </li>
 
@@ -199,15 +202,14 @@
                     </li>
                 </ul>
 
-                </ul>
             </li>
+            </ul>
 
             <div class="ads">
                 <div class="wrapper">
                     <a href="Emergency.html" class="btn-Emergency">Emergency</a>
                 </div>
             </div>
-            </ul>
         </nav>
 
         <!--Top Navbar-->
@@ -332,21 +334,25 @@
                                     <div class=top-form>
                                         <div class="input-fieldName">
                                             <label for="Sitting and reading">Sitting and reading: </label>
-                                            <select name="Reading" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
+                                            <select name="Reading" id="dp1" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
+                                                <option value="0">Will never doze</option>
+                                                <option value="1">Slight chance of dozing</option>
+                                                <option value="2">Moderate chance of dozing</option>
+                                                <option value="3">High chance of dozing</option>
                                             </select>
                                         </div>
 
                                         <div class="input-fieldName">
                                             <label for="Watching TV">Watching TV: </label>
-                                            <select name="Watching" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
+                                            <select name="Watching" id="dp2" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
+                                                <option value="0">Will never doze</option>
+                                                <option value="1">Slight chance of dozing</option>
+                                                <option value="2">Moderate chance of dozing</option>
+                                                <option value="3">High chance of dozing</option>
                                             </select>
                                         </div>
 
@@ -354,11 +360,13 @@
                                             <label for="Sitting, inactive in a public place">Sitting, inactive in a
                                                 public
                                                 place: </label>
-                                            <select name="Sitting" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
+                                            <select name="Sitting" id="dp3" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
+                                                <option value="0">Will never doze</option>
+                                                <option value="1">Slight chance of dozing</option>
+                                                <option value="2">Moderate chance of dozing</option>
+                                                <option value="3">High chance of dozing</option>
                                             </select>
                                         </div>
 
@@ -366,32 +374,38 @@
                                             <label for="Passenger in car">As a passenger in a car, <br>for an hour
                                                 without a
                                                 break: </label>
-                                            <select name="Passenger" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
+                                            <select name="Passenger" id="dp4" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
+                                                <option value="0">Will never doze</option>
+                                                <option value="1">Slight chance of dozing</option>
+                                                <option value="2">Moderate chance of dozing</option>
+                                                <option value="3">High chance of dozing</option>
                                             </select>
                                         </div>
 
                                         <div class="input-fieldName">
                                             <label for="Lying">Lying to rest in the afternoon <br> when you can:
                                             </label>
-                                            <select name="Lying" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
+                                            <select name="Lying" id="dp5" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
+                                                <option value="0">Will never doze</option>
+                                                <option value="1">Slight chance of dozing</option>
+                                                <option value="2">Moderate chance of dozing</option>
+                                                <option value="3">High chance of dozing</option>
                                             </select>
                                         </div>
 
                                         <div class="input-fieldName">
                                             <label for="Sitting and talking">Sitting and talking to someone: </label>
-                                            <select name="Sitting and talking" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
+                                            <select name="Sitting and talking" id="dp6" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
+                                                <option value="0">Will never doze</option>
+                                                <option value="1">Slight chance of dozing</option>
+                                                <option value="2">Moderate chance of dozing</option>
+                                                <option value="3">High chance of dozing</option>
                                             </select>
                                         </div>
 
@@ -399,33 +413,34 @@
                                             <label for="Sitting quietly">Sitting quietly after lunch <br> without
                                                 alcohol:
                                             </label>
-                                            <select name="Sitting Quietly" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
+                                            <select name="Sitting Quietly" id="dp7" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
+                                                <option value="0">Will never doze</option>
+                                                <option value="1">Slight chance of dozing</option>
+                                                <option value="2">Moderate chance of dozing</option>
+                                                <option value="3">High chance of dozing</option>
                                             </select>
                                         </div>
                                     </div>
 
-                                    <button class="btnn2">Validate Selection</button>
                                     <div class="Validate">
 
                                         <div class="input-fieldName">
                                             <label for="Score">Total Score: </label>
-                                            <input type="text" placeholder="Auto populated" required
+                                            <input type="text" id="totalInput" onchange="calculateTotal()" required
                                                 class="form-control">
                                         </div>
 
                                         <div class="input-fieldName">
                                             <label for="Risk">Risk: </label>
-                                            <input type="text" placeholder="Auto populated" required
+                                            <input type="text" id="risk" onchange="calculateTotal()" required
                                                 class="form-control">
                                         </div>
 
                                         <div class="input-fieldName">
                                             <label for="Recommended">Recommended Action: </label>
-                                            <input type="text" placeholder="Auto populated" required
+                                            <input type="text" id="action" onchange="calculateTotal()" required
                                                 class="form-control">
                                         </div>
                                     </div>
@@ -464,6 +479,44 @@
             });
 
         });
+    </script>
+
+    <script>
+        function calculateTotal() {
+            //Get selected options from dropdown
+            var dropdown1 = document.getElementById("dp1").value;
+            var dropdown2 = document.getElementById("dp2").value;
+            var dropdown3 = document.getElementById("dp3").value;
+            var dropdown4 = document.getElementById("dp4").value;
+            var dropdown5 = document.getElementById("dp5").value;
+            var dropdown6 = document.getElementById("dp6").value;
+            var dropdown7 = document.getElementById("dp7").value;
+
+            //Convert the values to integers and add them together
+            var tot = [parseInt(dropdown1), parseInt(dropdown2), parseInt(dropdown3), parseInt(dropdown4),
+            parseInt(dropdown5), parseInt(dropdown6), parseInt(dropdown7)];
+
+            var total = 0;
+            for (var i = 0; i < 7; i++) {
+                total += tot[i];
+
+                //Display the total in the total element
+                document.getElementById("totalInput").value = total;
+
+                //recommendations based on total amount
+                if (total <= 9) {
+                    document.getElementById("risk").value = "None";
+                    document.getElementById("action").value = "No action";
+                } else if (total >= 10 && total <= 15) {
+                    document.getElementById("risk").value = "Mild";
+                    document.getElementById("action").value = "Evaluate";
+                } else {
+                    document.getElementById("risk").value = "Moderate";
+                    document.getElementById("action").value = "Evaluate";
+                }
+            }
+
+        }
     </script>
 
 </body>

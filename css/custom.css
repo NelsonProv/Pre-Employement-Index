@@ -531,21 +531,22 @@ form .fields .input-field {
     flex-direction: column;
 }
 
- form .fields .input-fieldSubName{
+form .fields .input-fieldSubName {
     display: inline-block;
     width: calc(100% / 3 - 30px);
     flex-direction: column;
     border-radius: 40px;
     row-gap: 20px;
- }
- form .fields .input-fieldSubName2{
+}
+
+form .fields .input-fieldSubName2 {
     display: inline-block;
     width: calc(100% / 2 - 10px);
     flex-direction: column;
     border-radius: 40px;
-    row-gap: 5px; 
+    row-gap: 5px;
 
- }
+}
 
 .input-field label {
     font-size: 12px;
@@ -753,26 +754,32 @@ h6 {
 
 /* ConductAssessment Pages */
 
+.ConductAssessment .input-fieldName{
+    box-shadow: none;
+}
+
 .ConductAssessment .Validate {
     width: 100%;
     display: flex;
     position: relative;
     align-content: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .ConductAssessment .Validate input {
     width: 50%;
     height: 25px;
     border: 1px solid #8ac626;
-    margin-left: 135px;
+    margin-left: 80px;
 }
 
 .ConductAssessment .Validate label {
+    width: 10%;
     position: absolute;
-    margin-left: 10px;
     margin-top: 5px;
+    margin-left: -5px;
+    text-align: right;
 }
 
 .ConductAssessment form {
@@ -800,11 +807,105 @@ h6 {
     font-size: 12.5px;
 }
 
+/* Conduct Assessment 3 */
+
+.CA3 .top-form .input-fieldName {
+    height: 50px;
+}
+
+.CA3 .top-form label{
+    width: 70%;
+    text-align: left;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.CA3 .top-form select {
+    width: 20%;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 5px;
+    height: 40px;
+}
+
+.CA3 p {
+    margin: 15px 0;
+}
+
+.CA3 .mid-1 .input-fieldName {
+    height: 50px;
+    position: relative;
+}
+
+.CA3 .mid-1 label {
+    width: 25%;
+    text-align: left;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.CA3 .mid-1 select {
+    width: 25%;
+    margin-left: 200px;
+    height: 40px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.CA3 .mid-2 label {
+    width: 25%;
+    text-align: left;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 410px;
+}
+
+.CA3 .mid-2 select {
+    width: 25%;
+    margin-left: 600px;
+    height: 40px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.CA3 .mid-input {
+    margin-top: 15px;
+}
+
+.CA3 .mid-input label{
+    margin-left: 410px;
+    width: 25%;
+}
+
+.CA3 .mid-input input{
+    margin-left: 600px;
+    width: 25%;
+}
+
+.CA3 .mid-3 {
+    columns: 120px 3;
+}
+
+.CA3 .mid-3 .input-fieldName {
+    height: 40px;
+}
+
+.CA3 .mid-3 input {
+    width: 20px;
+    height: 20px;
+    margin-left: 200px;
+    margin-top: -25px;
+}
+
+.CA3 .mid-3 label {
+    text-align: left;
+}
+
 /* Conduct Assessment 7 */
 
-.CA7_h6{
-margin-left: 500px;
-margin-top: -25px;
+.CA7_h6 {
+    margin-left: 500px;
+    margin-top: -25px;
 }
 
 .CA7 .top .input-fieldName {
@@ -836,8 +937,8 @@ margin-top: -25px;
     margin-top: 15px;
 }
 
-.CA7 .top-form .input-fieldName{
-    height: 55px; 
+.CA7 .top-form .input-fieldName {
+    height: 55px;
 }
 
 .CA7 .top-form input {
@@ -851,6 +952,41 @@ margin-top: -25px;
     margin-left: 25px;
     margin-top: 10px;
     font-size: 12.5px;
+}
+
+/* Conduct Assessment 8 */
+
+.CA8 .top .input-fieldName{
+    height: 50px;
+}
+
+.CA8 .top select{
+    width: 25%;
+}
+
+.CA8 .top .heat select {
+    margin-left: 240px;
+}
+
+.CA8 .top .cold select{
+    margin-left: 600px;
+    margin-top: -50px;
+}
+
+.CA8 .top .heat label {
+    width: 25%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 12.5px;
+}
+
+.CA8 .top-form h6 {
+    margin-top: 15px;
+}
+
+.CA8 .top-form .input-fieldName{
+    height: 55px
 }
 
 
