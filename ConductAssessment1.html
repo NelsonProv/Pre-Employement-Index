@@ -446,78 +446,76 @@
                                     </div>
 
                                 </div>
+
+                                <!--Bottom of Page Button Navigation-->
+                                <button class="btnb" type="submit" formaction="ConductAssessment1.html">Back</button>
+                                <button class="btnn" type="submit" formaction="ConductAssessment2.html">Next</button>
+
+                            </div>
+                        </div>
                     </form>
+
                 </div>
-
-                <!--Bottom of Page Button Navigation-->
-
-                <button class="btnb">BACK</button>
-                <button class="btnn" onclick="">
-                    <a href="ConductAssessment2.html">Next</a>
-                </button>
-
             </div>
-        </div>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="js/jquery-3.3.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery-3.3.1.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#content').toggleClass('active');
-            });
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#sidebarCollapse').on('click', function () {
+                        $('#sidebar').toggleClass('active');
+                        $('#content').toggleClass('active');
+                    });
 
-            $('.more-button,.body-overlay').on('click', function () {
-                $('#sidebar,.body-overlay').toggleClass('show-nav');
-            });
+                    $('.more-button,.body-overlay').on('click', function () {
+                        $('#sidebar,.body-overlay').toggleClass('show-nav');
+                    });
 
-        });
-    </script>
+                });
+            </script>
 
-    <script>
-        function calculateTotal() {
-            //Get selected options from dropdown
-            var dropdown1 = document.getElementById("dp1").value;
-            var dropdown2 = document.getElementById("dp2").value;
-            var dropdown3 = document.getElementById("dp3").value;
-            var dropdown4 = document.getElementById("dp4").value;
-            var dropdown5 = document.getElementById("dp5").value;
-            var dropdown6 = document.getElementById("dp6").value;
-            var dropdown7 = document.getElementById("dp7").value;
+            <script>
+                function calculateTotal() {
+                    //Get selected options from dropdown
+                    var dropdown1 = document.getElementById("dp1").value;
+                    var dropdown2 = document.getElementById("dp2").value;
+                    var dropdown3 = document.getElementById("dp3").value;
+                    var dropdown4 = document.getElementById("dp4").value;
+                    var dropdown5 = document.getElementById("dp5").value;
+                    var dropdown6 = document.getElementById("dp6").value;
+                    var dropdown7 = document.getElementById("dp7").value;
 
-            //Convert the values to integers and add them together
-            var tot = [parseInt(dropdown1), parseInt(dropdown2), parseInt(dropdown3), parseInt(dropdown4),
-            parseInt(dropdown5), parseInt(dropdown6), parseInt(dropdown7)];
+                    //Convert the values to integers and add them together
+                    var tot = [parseInt(dropdown1), parseInt(dropdown2), parseInt(dropdown3), parseInt(dropdown4),
+                    parseInt(dropdown5), parseInt(dropdown6), parseInt(dropdown7)];
 
-            var total = 0;
-            for (var i = 0; i < 7; i++) {
-                total += tot[i];
+                    var total = 0;
+                    for (var i = 0; i < 7; i++) {
+                        total += tot[i];
 
-                //Display the total in the total element
-                document.getElementById("totalInput").value = total;
+                        //Display the total in the total element
+                        document.getElementById("totalInput").value = total;
 
-                //recommendations based on total amount
-                if (total <= 9) {
-                    document.getElementById("risk").value = "None";
-                    document.getElementById("action").value = "No action";
-                } else if (total >= 10 && total <= 15) {
-                    document.getElementById("risk").value = "Mild";
-                    document.getElementById("action").value = "Evaluate";
-                } else {
-                    document.getElementById("risk").value = "Moderate";
-                    document.getElementById("action").value = "Evaluate";
+                        //recommendations based on total amount
+                        if (total <= 9) {
+                            document.getElementById("risk").value = "None";
+                            document.getElementById("action").value = "No action";
+                        } else if (total >= 10 && total <= 15) {
+                            document.getElementById("risk").value = "Mild";
+                            document.getElementById("action").value = "Evaluate";
+                        } else {
+                            document.getElementById("risk").value = "Moderate";
+                            document.getElementById("action").value = "Evaluate";
+                        }
+                    }
+
                 }
-            }
-
-        }
-    </script>
+            </script>
 
 </body>
 

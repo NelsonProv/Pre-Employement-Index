@@ -478,7 +478,8 @@
                                                 <label for="Medicines">Are you currently taking any medicines,
                                                     tablet, or inhaler?
                                                 </label>
-                                                <select name="Medicines" id="" class="form-control">
+                                                <select name="Medicines" id="medYes" onchange="display()"
+                                                    class="form-control">
                                                     <option disabled selected hidden>Select an option</option>
                                                     <option value="Yes">Yes</option>
                                                     <option value="No">No</option>
@@ -486,10 +487,10 @@
                                             </div>
                                         </div>
 
-                                        <div class="mid-input">
+                                        <div id="med" style="display:none;" class="mid-input">
                                             <div class="input-fieldName">
                                                 <label for="Yes">If yes, what and since when? </label>
-                                                <input type="text" placeholder="" required class="form-control">
+                                                <input type="text" id="" placeholder="" required class="form-control">
                                             </div>
                                         </div>
 
@@ -629,14 +630,14 @@
                                         <div class="input-fieldName">
                                             <label for="Smoke">Smoking: Do you currently smoke?
                                             </label>
-                                            <select name="Smoke" id="" class="form-control">
+                                            <select name="Smoke" id="Smoking" onchange="display()" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Yes">Yes</option>
                                                 <option value="No">No</option>
                                             </select>
                                         </div>
 
-                                        <div class="input-fieldName">
+                                        <div id="Years" style="display:none;" class="input-fieldName">
                                             <label for="Years">For how many years have you smoked?
                                             </label>
                                             <select name="Years" id="" class="form-control">
@@ -647,7 +648,7 @@
                                             </select>
                                         </div>
 
-                                        <div class="input-fieldName">
+                                        <div id="Days" style="display:none;" class="input-fieldName">
                                             <label for="Day">How many do you smoke per day?
                                             </label>
                                             <select name="Day" id="" class="form-control">
@@ -661,14 +662,14 @@
                                         <div class="input-fieldName">
                                             <label for="Have">Have you ever smoked?
                                             </label>
-                                            <select name="Have" id="" class="form-control">
+                                            <select name="Have" id="Smoked" onchange="display()" class="form-control">
                                                 <option disabled selected hidden>Select an option</option>
                                                 <option value="Yes">Yes</option>
                                                 <option value="No">No</option>
                                             </select>
                                         </div>
 
-                                        <div class="input-fieldName">
+                                        <div id="Year" style="display:none;" class="input-fieldName">
                                             <label for="How">For how many years have you smoked?
                                             </label>
                                             <select name="How" id="" class="form-control">
@@ -679,7 +680,7 @@
                                             </select>
                                         </div>
 
-                                        <div class="input-fieldName">
+                                        <div id="PerDay" style="display:none;" class="input-fieldName">
                                             <label for="PerDay">How many did you smoke per day?
                                             </label>
                                             <select name="PerDay" id="" class="form-control">
@@ -692,18 +693,12 @@
                                     </div>
                                 </div>
 
+                                <!--Bottom of Page Button Navigation-->
+                                <button class="btnb" type="submit" formaction="ConductAssessment2.html">Back</button>
+                                <button class="btnn" type="submit" formaction="ConductAssessment4.html">Next</button>
+
                     </form>
                 </div>
-
-                <!--Bottom of Page Button Navigation-->
-
-                <button class="btnb">
-                    <a href="ConductAssessment2.html">Back</a>
-                </button>
-                <button class="btnn" onclick="">
-                    <a href="ConductAssessment4.html">Next</a>
-                </button>
-
             </div>
         </div>
     </div>
@@ -727,6 +722,44 @@
             });
 
         });
+    </script>
+
+    <!--Display input when value is yes-->
+    <script>
+        function display() {
+            var medYes = document.getElementById("medYes").value;
+            var med = document.getElementById("med");
+
+            if (medYes === "Yes") {
+                med.style.display = "block";
+            } else {
+                med.style.display = "none";
+            }
+
+            var Smoking = document.getElementById("Smoking").value;
+            var Years = document.getElementById("Years");
+            var Days = document.getElementById("Days");
+
+            if (Smoking === "Yes") {
+                Years.style.display = "block";
+                Days.style.display = "block";
+            } else {
+                Years.style.display = "none";
+                Days.style.display = "none";
+            }
+
+            var Smoked = document.getElementById("Smoked").value;
+            var Year = document.getElementById("Year");
+            var PerDay = document.getElementById("PerDay");
+
+            if (Smoked === "Yes") {
+                Year.style.display = "block";
+                PerDay.style.display = "block";
+            } else {
+                Year.style.display = "none";
+                PerDay.style.display = "none";
+            }
+        }
     </script>
 
 </body>
