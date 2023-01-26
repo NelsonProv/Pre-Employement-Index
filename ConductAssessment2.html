@@ -332,7 +332,8 @@
                                         <div class="input-fieldName">
                                             <label for="Tired">How often have you felt tired <br> without no reason?
                                             </label>
-                                            <select name="Tired" id="" class="form-control">
+                                            <select name="Tired" id="dp1" onchange="calculateTotal()"
+                                                class="form-control">
                                                 <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
@@ -344,8 +345,9 @@
 
                                         <div class="input-fieldName">
                                             <label for="Nervous">How often do you feel nervous? </label>
-                                            <select name="Nervous" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Nervous" id="dp2" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -359,8 +361,9 @@
                                                 calm you
                                                 down?
                                             </label>
-                                            <select name="Calm" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Calm" id="dp3" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -371,8 +374,9 @@
 
                                         <div class="input-fieldName">
                                             <label for="Hopeless">How often do you feel hopeless?</label>
-                                            <select name="Hopeless" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Hopeless" id="dp4" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -384,8 +388,9 @@
                                         <div class="input-fieldName">
                                             <label for="Restless">How often do you feel restless <br> of fidgety?
                                             </label>
-                                            <select name="Restless" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Restless" id="dp5" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -398,8 +403,9 @@
                                             <label for="Sit still">How often do you feel restless <br> that you could
                                                 not sit
                                                 still? </label>
-                                            <select name="Sit still" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Sit still" id="dp6" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -411,8 +417,9 @@
                                         <div class="input-fieldName">
                                             <label for="Depressed">How often do you feel depressed?
                                             </label>
-                                            <select name="Depressed" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Depressed" id="dp7" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -425,8 +432,9 @@
                                             <label for="Effort">How often do you feel that <br> everything was an
                                                 effort?
                                             </label>
-                                            <select name="Effort" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Effort" id="dp8" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -439,8 +447,9 @@
                                             <label for="Sad">How often did you feel so sad <br> that nothing could cheer
                                                 you up?
                                             </label>
-                                            <select name="Sad" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Sad" id="dp9" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -452,8 +461,9 @@
                                         <div class="input-fieldName">
                                             <label for="Worthless">How often do you feel worthless?
                                             </label>
-                                            <select name="Worthless" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
+                                            <select name="Worthless" id="dp10" onchange="calculateTotal()"
+                                                class="form-control">
+                                                <option value="0" disabled selected hidden>Select an option</option>
                                                 <option value="1">None of the time</option>
                                                 <option value="2">A little of the time</option>
                                                 <option value="3">Some of the time</option>
@@ -467,37 +477,27 @@
 
                                         <div class="input-fieldName">
                                             <label for="Score">Total Score: </label>
-                                            <input type="text" placeholder="Auto populated" required
-                                                class="form-control">
+                                            <input type="text" id="totalInput" required class="form-control">
                                         </div>
 
                                         <div class="input-fieldName">
                                             <label for="Risk">Risk: </label>
-                                            <input type="text" placeholder="Auto populated" required
-                                                class="form-control">
+                                            <input type="text" id="risk" required class="form-control">
                                         </div>
 
                                         <div class="input-fieldName">
                                             <label for="Recommended">Recommended Action: </label>
-                                            <input type="text" placeholder="Auto populated" required
-                                                class="form-control">
+                                            <input type="text" id="action" required class="form-control">
                                         </div>
                                     </div>
-
                                 </div>
+
+                                <!--Bottom of Page Button Navigation-->
+                                <button class="btnb" type="submit" formaction="ConductAssessment1.html">Back</button>
+                                <button class="btnn" type="submit" formaction="ConductAssessment3.html">Next</button>
 
                     </form>
                 </div>
-
-                <!--Bottom of Page Button Navigation-->
-
-                <button class="btnb">
-                    <a href="ConductAssessment1.html">Back</a>
-                </button>
-                <button class="btnn" onclick="">
-                    <a href="ConductAssessment2.html">Next</a>
-                </button>
-
             </div>
         </div>
     </div>
@@ -523,43 +523,47 @@
         });
     </script>
 
-<script>
-    function calculateTotal() {
-        //Get selected options from dropdown
-        var dropdown1 = document.getElementById("dp1").value;
-        var dropdown2 = document.getElementById("dp2").value;
-        var dropdown3 = document.getElementById("dp3").value;
-        var dropdown4 = document.getElementById("dp4").value;
-        var dropdown5 = document.getElementById("dp5").value;
-        var dropdown6 = document.getElementById("dp6").value;
-        var dropdown7 = document.getElementById("dp7").value;
+    <script>
+        function calculateTotal() {
+            //Get selected options from dropdown
+            var dropdown1 = document.getElementById("dp1").value;
+            var dropdown2 = document.getElementById("dp2").value;
+            var dropdown3 = document.getElementById("dp3").value;
+            var dropdown4 = document.getElementById("dp4").value;
+            var dropdown5 = document.getElementById("dp5").value;
+            var dropdown6 = document.getElementById("dp6").value;
+            var dropdown7 = document.getElementById("dp7").value;
+            var dropdown8 = document.getElementById("dp8").value;
+            var dropdown9 = document.getElementById("dp9").value;
+            var dropdown10 = document.getElementById("dp10").value;
 
-        //Convert the values to integers and add them together
-        var tot = [parseInt(dropdown1), parseInt(dropdown2), parseInt(dropdown3), parseInt(dropdown4),
-        parseInt(dropdown5), parseInt(dropdown6), parseInt(dropdown7)];
+            //Convert the values to integers and add them together
+            var tot = [parseInt(dropdown1), parseInt(dropdown2), parseInt(dropdown3), parseInt(dropdown4),
+            parseInt(dropdown5), parseInt(dropdown6), parseInt(dropdown7), parseInt(dropdown8),
+            parseInt(dropdown9), parseInt(dropdown10)];
 
-        var total = 0;
-        for (var i = 0; i < 7; i++) {
-            total += tot[i];
+            var total = 0;
+            for (var i = 0; i < 10; i++) {
+                total += tot[i];
 
-            //Display the total in the total element
-            document.getElementById("totalInput").value = total;
+                //Display the total in the total element
+                document.getElementById("totalInput").value = total;
 
-            //recommendations based on total amount
-            if (total <= 9) {
-                document.getElementById("risk").value = "None";
-                document.getElementById("action").value = "No action";
-            } else if (total >= 10 && total <= 15) {
-                document.getElementById("risk").value = "Mild";
-                document.getElementById("action").value = "Evaluate";
-            } else {
-                document.getElementById("risk").value = "Moderate";
-                document.getElementById("action").value = "Evaluate";
+                //recommendations based on total amount
+                if (total <= 15) {
+                    document.getElementById("risk").value = "Normal";
+                    document.getElementById("action").value = "No action";
+                } else if (total >= 16 && total <= 30) {
+                    document.getElementById("risk").value = "Mild Disorder";
+                    document.getElementById("action").value = "Counseling";
+                } else {
+                    document.getElementById("risk").value = "Sever Disorder";
+                    document.getElementById("action").value = "Psychiatric Ref";
+                }
             }
-        }
 
-    }
-</script>
+        }
+    </script>
 
 </body>
 
