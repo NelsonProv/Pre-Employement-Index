@@ -840,7 +840,8 @@ h6 {
     font-size: 12.5px;
 }
 
-.ConductAssessment .top-form1 select, .ConductAssessment .top-form1 input {
+.ConductAssessment .top-form1 select,
+.ConductAssessment .top-form1 input {
     width: 20%;
     position: absolute;
     margin-left: 500px;
@@ -1017,6 +1018,137 @@ h6 {
 
 .CA6 h6 {
     margin-top: 15px;
+}
+
+/* Create Pages */
+
+.container .CreateHeader {
+    color: #8ac626;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+.CreateIcon {
+    color: #8ac626;
+}
+
+.Create .input-fieldName {
+    box-shadow: none;
+    padding: 10px 10px;
+    height: 50px;
+}
+
+.Create .top-form select {
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.127);
+    height: 38px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.Create form {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+.Create .top-form select,
+.Create .top-form input {
+    width: 70%;
+    margin-left: 240px;
+    margin-top: 5px;
+}
+
+.Create .top-form label {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 12.5px;
+}
+
+.Create .mid1 input {
+    width: 35%;
+    margin-left: 240px;
+    margin-top: 5px;
+}
+
+.Create .mid2 input {
+    width: 20%;
+    margin-left: 130px;
+}
+
+.Create .mid2 .input-fieldName {
+    margin-left: 500px;
+    margin-top: -50px;
+}
+
+.Create .mid3 {
+    columns: 1px 3;
+    width: 50%;
+}
+
+.Create .mid3 input {
+    width: 20px;
+    height: 20px;
+    margin-left: 80px;
+}
+
+.Create .mid4 input {
+    width: 40%;
+    margin-left: 240px;
+    margin-top: 5px;
+}
+
+.Create .mid5 input {
+    width: 15%;
+    margin-left: 120px;
+}
+
+.Create .mid5 .input-fieldName {
+    margin-left: 550px;
+    margin-top: -50px;
+}
+
+.Create input[type="file"] {
+    display: none;
+}
+
+.Create .mid7 span {
+    margin-left: 120px;
+}
+
+.Create .mid8{
+    columns: 1px 2;
+    width: 600px;
+}
+
+.Create .mid8 input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ff1f1f;
+    width: 30%;
+    outline: none;
+}
+
+.Create .mid8 label {
+    margin-left: 340px;
+    margin-top: 35px;
+}
+
+.save {
+    position: relative;
+    min-height: 30px;
+    min-width: 120px;
+    outline: none;
+    margin-top: 35px;
+    border-color: #333;
+    border-radius: 8px;
+    background-color: #8ac626;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-left: 350px;
 }
 
 /*=======================================================
