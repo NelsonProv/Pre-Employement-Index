@@ -320,156 +320,303 @@
             <div class="main-content">
                 <div class="container">
                     <h5 class="conduct_subheading">Audiometry Questionnaire</h5>
-                    <p class="conduct_description">Anyone in family with hearing loss problems before the age 50 ?.</p>
 
                     <form action="#">
                         <div class="form-first">
-                            <div class="ConductAssessment">
+                            <div class="ConductAssessment CA4">
 
                                 <div class="fields">
-                                    <div class=top-form>
+                                    <div class="top-form top-form1">
                                         <div class="input-fieldName">
-                                            <label for="Tired">How often have you felt tired <br> without no reason?
+                                            <label for="HearingLoss">Anyone in family with hearing loss problems <br>
+                                                before the age 50?
                                             </label>
-                                            <select name="Tired" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Nervous">How often do you feel nervous? </label>
-                                            <select name="Nervous" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Calm">How often did you feel nervous <br> that nothing could
-                                                calm you
-                                                down?
-                                            </label>
-                                            <select name="Calm" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Hopeless">How often do you feel hopeless?</label>
-                                            <select name="Hopeless" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Restless">How often do you feel restless <br> of fidgety?
-                                            </label>
-                                            <select name="Restless" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Sit still">How often do you feel restless <br> that you could
-                                                not sit
-                                                still? </label>
-                                            <select name="Sit still" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Depressed">How often do you feel depressed?
-                                            </label>
-                                            <select name="Depressed" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Effort">How often do you feel that everything <br> was an
-                                                effort?
-                                            </label>
-                                            <select name="Effort" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Sad">How often did you feel so sad <br> that nothing could cheer
-                                                you up?
-                                            </label>
-                                            <select name="Sad" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-fieldName">
-                                            <label for="Worthless">How often do you feel worthless?
-                                            </label>
-                                            <select name="Worthless" id="" class="form-control">
-                                                <option disabled selected hidden>Select an option</option>
-                                                <option value="Likely">Likely</option>
-                                                <option value="Very Likely">Very Likely</option>
-                                                <option value="Not Likely">Not Likely</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <button class="btnn2">Validate Selection</button>
-
-                                    <div class="Validate">
-
-                                        <div class="input-fieldName">
-                                            <label for="Score">Total Score: </label>
-                                            <input type="text" placeholder="Auto populated" required
+                                            <select name="HearingLoss" id="HearingLoss" onchange="display()"
                                                 class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName" id="YesLoss" style="display:none;">
+                                            <label for="YesLoss">If yes, what and since when? </label>
+                                            <input type="text" placeholder="" class="form-control">
                                         </div>
 
                                         <div class="input-fieldName">
-                                            <label for="Risk">Risk: </label>
-                                            <input type="text" placeholder="Auto populated" required
-                                                class="form-control">
+                                            <label for="Injury">Have you had a head injury? </label>
+                                            <select name="Injury" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
                                         </div>
 
                                         <div class="input-fieldName">
-                                            <label for="Recommended">Recommended Action: </label>
-                                            <input type="text" placeholder="Auto populated" required
-                                                class="form-control">
+                                            <label for="Assualt">Have you had an assualt on your head?
+                                            </label>
+                                            <select name="Assualt" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
                                         </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Unconscious">Have you ever been unconscious?</label>
+                                            <select name="Unconscious" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Discharge">Do you ever experience ear discharge or have history
+                                                <br>
+                                                of any pain in the inner ear?
+                                            </label>
+                                            <select name="Discharge" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Infection">Have you had an ear infection?
+                                            </label>
+                                            <select name="Infection" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Surgery">Had surgery to your ears?
+                                            </label>
+                                            <select name="Surgery" id="Surgery" onchange="display()"
+                                                class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName" id="YesSur" style="display:none;">
+                                            <label for="YesSur">If yes, please explain. </label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Antibiotics">Do you take any antibiotics?
+                                            </label>
+                                            <select name="Antibiotics" id="Antibiotics" onchange="display()"
+                                                class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName" id="YesAnt" style="display:none;">
+                                            <label for="YesAnt">If yes, please name. </label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Diseases"> Did you have any contagious diseases? eg.Measles
+                                            </label>
+                                            <select name="Diseases" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Test">Have you ever had a previous hearing test?
+                                            </label>
+                                            <select name="Test" id="Test" onchange="display()" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mid1" id="YesTest" style="display:none;">
+
+                                            <div class="input-fieldName">
+                                                <label for="When">When?
+                                                </label>
+                                                <select name="When" id="" class="form-control">
+                                                    <option disabled selected hidden>Select an option</option>
+                                                    <option value="Date1">&#60;3 years</option>
+                                                    <option value="Date2">&#60;7 years</option>
+                                                    <option value="Date3">>10 years</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="mid2" id="YesT" style="display:none;">
+
+                                            <div class="input-fieldName">
+                                                <label for="Where">Where?
+                                                </label>
+                                                <select name="Where" id="" class="form-control">
+                                                    <option disabled selected hidden>Select an option</option>
+                                                    <option value="Where1">South Africa</option>
+                                                    <option value="Where2">Outside Country</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Military">Have you done military services?
+                                            </label>
+                                            <select name="Military" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Noise">Have you been exposed to any loud noise such as <br>
+                                                gunfire or loud music?
+                                            </label>
+                                            <select name="Noise" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Noisy">Have you worked in a noisy area?
+                                            </label>
+                                            <select name="Noisy" id="Noisy" onchange="display()" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName" id="YesNoise" style="display:none;">
+                                            <label for="YesNoise">If yes, please explain. </label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+
+                                        <div class="mid3">
+
+                                            <div class="input-fieldName">
+                                                <label for="Protection">Do you and did you wear <br>
+                                                    ear protection at previous <br>
+                                                    employer?
+                                                </label>
+                                            </div>
+                                            <div class="input-fieldName">
+                                                <label></label> </label>
+                                            </div>
+
+                                            <div class="input-fieldName">
+                                                <label for="Employer">Employer </label>
+                                                <input type="checkbox" placeholder="" class="form-control">
+                                            </div>
+
+                                            <div class="input-fieldName">
+                                                <label for="Earplugs">Earplugs </label>
+                                                <input type="checkbox" placeholder="" class="form-control">
+                                            </div>
+
+                                            <div class="input-fieldName">
+                                                <label for="Earmuffs">Earmuffs </label>
+                                                <input type="checkbox" placeholder="" class="form-control">
+                                            </div>
+
+                                            <div class="input-fieldName">
+                                                <label for="Variphone">Variphone </label>
+                                                <input type="checkbox" placeholder="" class="form-control">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="NoiseZone">Do you work in a noise zone without hearing
+                                                protection?
+                                            </label>
+                                            <select name="NoiseZone" id="NoiseZone" onchange="display()"
+                                                class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mid1" id="YesNoiseZ" style="display:none;">
+
+                                            <div class="input-fieldName">
+                                                <label for="When">When?
+                                                </label>
+                                                <select name="When" id="" class="form-control">
+                                                    <option disabled selected hidden>Select an option</option>
+                                                    <option value="Date">&#60;3 years</option>
+                                                    <option value="Date">&#60;7 years</option>
+                                                    <option value="Date">>10 years</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="mid2" id="YesNoiseZone" style="display:none;">
+
+                                            <div class="input-fieldName">
+                                                <label for="Where">Where?
+                                                </label>
+                                                <select name="Where" id="" class="form-control">
+                                                    <option disabled selected hidden>Select an option</option>
+                                                    <option value="Where1">South Africa</option>
+                                                    <option value="Where2">Outside Country</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Influenza">Have you recently had influenza, coryza?
+                                            </label>
+                                            <select name="Influenza" id="" class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName">
+                                            <label for="Hobbies">Do you have hobbies?
+                                            </label>
+                                            <select name="Hobbies" id="Hobbies" onchange="display()"
+                                                class="form-control">
+                                                <option disabled selected hidden>Select an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-fieldName" id="YesHobbies" style="display:none;">
+                                            <label for="YesHobbies">If yes, please explain. </label>
+                                            <input type="text" placeholder="" class="form-control">
+                                        </div>
+
                                     </div>
 
                                 </div>
+                            </div>
 
-                                <!--Bottom of Page Button Navigation-->
-                                <button class="btnb" type="submit" formaction="ConductAssessment3.html">Back</button>
-                                <button class="btnn" type="submit" formaction="ConductAssessment5.html">Next</button>
+                            <!--Bottom of Page Button Navigation-->
+                            <button class="btnb" type="submit" formaction="ConductAssessment3.html">Back</button>
+                            <button class="btnn" type="submit" formaction="ConductAssessment5.html">Next</button>
 
                     </form>
                 </div>
@@ -496,6 +643,80 @@
             });
 
         });
+    </script>
+
+    <!--Display input when value is yes-->
+    <script>
+        function display() {
+            var hearingLoss = document.getElementById("HearingLoss").value;
+            var yesLoss = document.getElementById("YesLoss");
+
+            if (hearingLoss === "Yes") {
+                yesLoss.style.display = "block";
+            } else {
+                yesLoss.style.display = "none";
+            }
+
+            var surgery = document.getElementById("Surgery").value;
+            var yesSur = document.getElementById("YesSur");
+
+            if (surgery === "Yes") {
+                yesSur.style.display = "block";
+            } else {
+                yesSur.style.display = "none";
+            }
+
+            var antibiotics = document.getElementById("Antibiotics").value;
+            var yesAnt = document.getElementById("YesAnt");
+
+            if (antibiotics === "Yes") {
+                yesAnt.style.display = "block";
+            } else {
+                yesAnt.style.display = "none";
+            }
+
+            var test = document.getElementById("Test").value;
+            var yesTest = document.getElementById("YesTest");
+            var yesT = document.getElementById("YesT");
+
+            if (test === "Yes") {
+                yesTest.style.display = "block";
+                yesT.style.display = "block";
+            } else {
+                yesTest.style.display = "none";
+                yesT.style.display = "none";
+            }
+
+            var noisy = document.getElementById("Noisy").value;
+            var yesNoise = document.getElementById("YesNoise");
+
+            if (noisy === "Yes") {
+                yesNoise.style.display = "block";
+            } else {
+                yesNoise.style.display = "none";
+            }
+
+            var noiseZone = document.getElementById("NoiseZone").value;
+            var yesNoiseZ = document.getElementById("YesNoiseZ");
+            var yesNoiseZone = document.getElementById("YesNoiseZone");
+
+            if (noiseZone === "Yes") {
+                yesNoiseZ.style.display = "block";
+                yesNoiseZone.style.display = "block";
+            } else {
+                yesNoiseZ.style.display = "none";
+                yesNoiseZone.style.display = "none";
+            }
+
+            var hobbies = document.getElementById("Hobbies").value;
+            var yesHobbies = document.getElementById("YesHobbies");
+
+            if (hobbies === "Yes") {
+                yesHobbies.style.display = "block";
+            } else {
+                yesHobbies.style.display = "none";
+            }
+        }
     </script>
 
 </body>
