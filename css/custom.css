@@ -787,7 +787,7 @@ h6 {
 }
 
 .ConductAssessment .Validate input {
-    width: 50%;
+    width: 60%;
     height: 25px;
     border: 1px solid #8ac626;
     margin-left: 80px;
@@ -1020,6 +1020,96 @@ h6 {
     margin-top: 15px;
 }
 
+/*Conduct Assessment 7 */
+
+.CA7 .top .input-fieldName{
+    width: 100%;
+}
+
+.CA7 .top {
+    columns: 50px 4;
+    width: 800px;
+}
+
+.CA7 h6{
+    margin: 15px 0px;
+}
+
+/* Conduct Assessment 8 */
+
+.CA8 .top select {
+    width: 20%;
+    margin-left: 300px;
+}
+
+.CA8 .top label{
+    width: 35%;
+}
+
+.CA8 .CA8_h6 {
+    margin: 15px 0px;
+}
+
+.CA8 .mid .input-fieldName{
+    width: 100%;
+}
+
+.CA8 .mid {
+    columns: 50px 4;
+    width: 800px;
+}
+
+.CA8 .mid label {
+    margin-left: 100px;
+}
+
+.CA8 .mid select {
+    margin-left: -40px;
+}
+
+/* Conduct Assessment 9 */
+
+.CA9 .mid input {
+    width: 20px;
+    height: 20px;
+}
+
+.CA9 .mid {
+    columns: 50px 8;
+    width: 800px;
+}
+
+.CA9 .mid1{
+    columns: 50px 4;
+    width: 800px;
+}
+
+.CA9 .mid1 input{
+    width: 25%;
+    margin-left: -50px;
+}
+
+.CA9 .mid1 select{
+    width: 25%;
+    margin-left: -50px;
+}
+
+.CA9 input[type="file"]{
+    display: none;
+}
+
+.CA9 .File{
+    background: #fff;
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.127);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+    margin-left: -50px;
+}
+
 /* Create Pages */
 
 .container .CreateHeader {
@@ -1078,7 +1168,7 @@ h6 {
     margin-left: 130px;
 }
 
-.Create .mid2 .input-fieldName {
+.Create .mid2 {
     margin-left: 500px;
     margin-top: -50px;
 }
@@ -1105,7 +1195,7 @@ h6 {
     margin-left: 120px;
 }
 
-.Create .mid5 .input-fieldName {
+.Create .mid5 {
     margin-left: 550px;
     margin-top: -50px;
 }
@@ -1118,7 +1208,7 @@ h6 {
     margin-left: 120px;
 }
 
-.Create .mid8{
+.Create .mid8 {
     columns: 1px 2;
     width: 600px;
 }
@@ -1149,6 +1239,284 @@ h6 {
     color: white;
     padding: 15px 32px;
     margin-left: 350px;
+}
+
+/*Scheduling Appointment*/
+
+.SchedulingAppointment .container {
+    max-width: 700px;
+    width: 100%;
+    min-height: 100px;
+    height: 200px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    background: #fff;
+    margin-left: 25px;
+    margin-top: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.SchedulingAppointment .container form{
+    min-height: 150px;
+    background-color: #fff;
+}
+
+.SchedulingAppointment .header {
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    padding: 15px 30px;
+    margin-left: 0px;
+}
+
+.SchedulingAppointment .container form .card-detail {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.SchedulingAppointment form .card-detail .card-box {
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 2px;
+}
+
+.SchedulingAppointment .card-detail .card-box input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    padding: 15px 15px;
+    font-size: 17px;
+    border-bottom-width: 2px;
+    background: #8ac626;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.SchedulingAppointment form .card-detail .card-box {
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 5px;
+}
+
+.SchedulingAppointment .card-detail .card-box input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    padding: 15px 15px;
+    font-size: 17px;
+    border-bottom-width: 2px;
+    background: #8ac626;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.SchedulingAppointment .card-detail .card-box input:hover {
+    background: #9dff00;
+    color: #333;
+}
+
+.SchedulingAppointment .card-box input :hover::before {
+    height: 180%;
+}
+
+.SchedulingAppointment .card-detail .card-box input::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00ff59;
+}
+
+.SchedulingAppointment .container1 {
+    max-width: 700px;
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    margin-left: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.SchedulingAppointment .container1 form .card-detail1 {
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.SchedulingAppointment .card-detail1 .card-box1 input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 17px;
+    border-bottom-width: 2px;
+    background: #fff;
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.8s;
+}
+
+.SchedulingAppointment .container1 li{
+    color:rgba(0, 0, 0, 0);
+}
+
+.SchedulingAppointment .card-detail1 .card-box1 input:hover {
+    background: #8ac626;
+    color: #fff;
+    transition: all 0.8s;
+}
+
+.SchedulingAppointment .card-box1 input :hover::before {
+    height: 180%;
+}
+
+.SchedulingAppointment form .card-detail1 .card-box1 {
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 15px;
+}
+
+.SchedulingAppointment .card-detail1 .card-box1 input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid rgb(255, 0, 0);
+    padding-left: 15px;
+    font-size: 17px;
+    border-bottom-width: 1px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.SchedulingAppointment .card-detail1 .card-box1 .notification {
+    position: absolute;
+    display: block;
+    font-size: 5px;
+    font-weight: 400;
+    border: 0px;
+    font-size: 12px;
+    background: #8ac626;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 82px;
+    color: rgb(255, 255, 255);
+    right: -1px;
+    top: 10px;
+    line-height: 29px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.SchedulingAppointment .card-detail1 .card-box1 .notification:hover {
+    background: #ff0000;
+    transition: all 0.5s;
+}
+
+.SchedulingAppointment .container-right {
+    position: absolute;
+    max-width: 400px;
+    width: 245px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    margin-left: 85px;
+    top: 145px;
+    right: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.SchedulingAppointment .container-right ul li {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+    padding: 10 5px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.SchedulingAppointment .container-right p {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 11px;
+    padding: 10 5px;
+    margin-bottom: 30px;
+    color: #333;
+    margin-top: -35px;
+}
+
+.SchedulingAppointment .container-right ul li span {
+    float: right;
+    color: #333;
+}
+
+.SchedulingAppointment .update {
+    position: relative;
+    background: #8ac626;
+    border-radius: 9px;
+    height: 60px;
+    padding: 10px 20px 20px 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.SchedulingAppointment .update input {
+    background: rgb(79, 77, 77);
+    width: 50px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    margin-left: 140px;
+    margin-top: -1px;
+}
+
+.SchedulingAppointment .update h6 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -39px;
+}
+
+.SchedulingAppointment .update p {
+    color: #fff;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.SchedulingAppointment .container-right h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.SchedulingAppointment input {
+    border-radius: 5px;
+    border: 1px solid #c4c1c1;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    color: #333;
 }
 
 /*=======================================================
