@@ -1226,6 +1226,34 @@ h6 {
     margin-top: 35px;
 }
 
+.Create .mid8s{
+    columns: 1px 2;
+    width: 600px;
+    margin-left: -100px;
+}
+
+.Create .mid8s input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ff1f1f;
+    width: 30%;
+    outline: none;
+}
+
+.Create .mid8s label {
+    margin-left: 340px;
+    margin-top: 35px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    background-color: black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+
 .save {
     position: relative;
     min-height: 30px;
