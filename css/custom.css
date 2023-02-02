@@ -1655,7 +1655,9 @@ margin-top: -1px;
 
     
 /*chartbar for dasboard report---*/
-.main-grid{position: relative;
+
+/*chartbar for dasboard report---*/
+.main{position: relative;
     width:80%;
     margin: 50px auto;
     border-radius: 8px solid grey;
@@ -1841,7 +1843,7 @@ margin-top: -1px;
  }
  
 
- .span1{
+ .span{
     position: relative;
     font-size: 12px;
     color: #8ac626;
@@ -1849,10 +1851,53 @@ margin-top: -1px;
     bottom: -55px;
     margin-left: 20px;
  }
-/*-------end report dashboard
-    
-/*-----end dashboard admin----*/
 
+
+ .item-2 #donutchart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 2px;
+    left: -35px;
+
+    
+    
+    }
+
+    .item-3 #piechart{
+        position: relative;
+        display: flex;
+        left: -40px;
+        top: 2px;
+
+    }
+    .item-1 #columnchart_material{
+        position: relative;
+        margin-left: 10px;
+       
+    }
+    .item-4 #myChart{
+        position: relative;
+         top: 35px;
+         left: 0px;
+    }
+
+    .item-10 #curve_chart{
+       margin-left: -68px;
+       margin-top: 18px;
+    }
+
+    .item-11 #chartContainer{
+        position: relative;
+     
+        justify-content: center;
+       
+        top: 60px;
+        left: -0px;
+
+    }
+ 
+/*-------end report dashboard
 
 
 /*Scheduling Appointment*/
