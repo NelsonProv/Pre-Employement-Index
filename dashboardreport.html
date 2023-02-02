@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>report Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!----css3---->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&family=Poppins:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <!--google material icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Pre emp',     11],
+          ['periodic',      12],
+          ['Transfert',  21],
+          ['Exit', 20],
+       
+        ]);
+
+        var options = {
+          title: ''
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'actual', 'booked'],
+      ['jul',  1000,      800],
+      ['august',  1170,      560],
+      ['sept',  660,       1120],
+      ['oct',  1030,      740]
+    ]);
+
+    var options = {
+      title: 'BOOKED VS MEDICAL',
+      curveType: 'function',
+      legend: { position: 'top' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="body-overlay"></div>
+
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="img/images/trans.png" class="img-fluid" /><span><a href="index.html">Transnet</a></span>
+                </h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" class="dashboard"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
+                </li>
+
+                <div class="small-screen navbar-display">
+                    <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="material-icons">notifications</i><span> 4 notification</span></a>
+                        <ul class="collapse list-unstyled menu" id="homeSubmenu0">
+                            <li>
+                                <a href="#">You have 5 new messages</a>
+                            </li>
+                            <li>
+                                <a href="#">You're now friend with Mike</a>
+                            </li>
+                            <li>
+                                <a href="#">You're now friend with Mike</a>
+                            </li>
+                            <li>
+                                <a href="#">You're now friend with Mike</a>
+                            </li>
+                            <li>
+                                <a href="#">Wish Mary on her birthday!</a>
+                            </li>
+                            <li>
+                                <a href="#">5 warnings in Server Console</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#"><i class="material-icons">apps</i><span>apps</span></a>
+                    </li>
+
+                    <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#"><i class="material-icons">person</i><span>user</span></a>
+                    </li>
+
+                    <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#"><i class="material-icons">settings</i><span>setting</span></a>
+                    </li>
+                </div>
+
+                <li class="dropdown">
+                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">aspect_ratio</i><span>Scheduling</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+                        <li>
+                        <li class="dropdown">
+                            <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">
+                                <i class='bx bxs-capsule'></i><span>Medical Surveillance</span></a>
+                            <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+                                <li>
+                                    <a href="index.html">Pre-employment</a>
+                                </li>
+                                <li>
+                                    <a href="PERIODIC.html">Periodic Examination</a>
+                                </li>
+                                <li>
+                                    <a href="TRIGGER.html">Trigger</a>
+                                </li>
+                                <li>
+                                    <a href="TRANSFERT.html">Transfert</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                        <li class="dropdown">
+                            <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">
+                                <i class='bx bx-plus-medical'></i><span>Primary Health care</span></a>
+                            <ul class="collapse list-unstyled menu" id="pageSubmenu3">
+                                <li>
+                                    <a href="PRIMARY HEALTH CARE.html">Minor Element</a>
+                                </li>
+                                <li>
+                                    <a href="#">Family Planning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Primary Health Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Demographics</a>
+                                </li>
+                            </ul>
+                        </li>
+                </li>
+
+                <li>
+                    <a href="#">Wellness</a>
+                </li>
+                <li>
+                    <a href="#">Chronic</a>
+                </li>
+            </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="material-icons">assessment</i><span>Conduct Assessment</span></a>
+                <ul class="collapse list-unstyled menu" id="pageSubmenu4">
+                    <li>
+                        <a href="ConductAssessment1.html">Conduct Assessment One</a>
+                    </li>
+                    <li>
+                        <a href="ConductAssessment2.html">Conduct Assessment Two</a>
+                    </li>
+                    <li>
+                        <a href="ConductAssessment3.html">Conduct Assessment Three</a>
+                    </li>
+                    <li>
+                        <a href="ConductAssessment4.html">Conduct Assessment Four</a>
+                    </li>
+                    <li>
+                        <a href="ConductAssessment5.html">Conduct Assessment Five</a>
+                    </li>
+                    <li>
+                        <a href="ConductAssessment6.html">Conduct Assessment Six</a>
+                    </li>
+                    <li>
+                        <a href="ConductAssessment7.html">Conduct Assessment Seven</a>
+                    </li>
+                    <li>
+                        <a href="ConductAssessment8.html">Conduct Assessment Eight</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="">
+                    <i class="material-icons">apps</i><span>Patient record</span></a>
+                <ul class="collapse list-unstyled menu" id="pageSubmenu5"> </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="">
+                    <i class="material-icons">equalizer</i>
+                    <span>Dispensary</span></a>
+                <ul class="collapse list-unstyled menu" id="pageSubmenu6"> </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="material-icons">extension</i><span>Reporting</span></a>
+                <ul class="collapse list-unstyled menu" id="pageSubmenu7">
+                    <li>
+                        <a href="#">Occupation Health</a>
+                    </li>
+                    <li>
+                        <a href="#">IOD</a>
+                    </li>
+                    <li>
+                        <a href="#">Primary Health Care</a>
+                    </li>
+                    <li>
+                        <a href="#">Demographics</a>
+                    </li>
+                    <li>
+                        <a href="Report_specific.html">Medical Surveillance</a>
+                    </li>
+                </ul>
+
+            </li>
+            </ul>
+
+            <div class="ads">
+                <div class="wrapper">
+                    <a href="Emergency.html" class="btn-Emergency">Emergency</a>
+                </div>
+            </div>
+        </nav>
+
+        <!--Top Navbar-->
+        <div id="content">
+            <div class="top-navbar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+
+                        <button type="button" id="sidebarCollapse" class="">
+                            <span class="bx bx-menu toggle-sidebar"></span>
+                        </button>
+
+                        <a class="navbar-brand" href="#"> </a>
+
+                        <button class="d-inline-block d-lg-none ml-auto more-button" type="button"
+                            data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="material-icons">more_vert</span>
+                        </button>
+
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" placeholder="search...">
+                                <i class='bx bx-search icon'></i>
+                            </div>
+                        </form>
+
+                        <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none"
+                            id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="dropdown nav-item active">
+                                    <a href="#" class="nav-link" data-toggle="dropdown">
+                                        <span class="material-icons">notifications</span>
+                                        <span class="notification">9</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <h4></h4>
+                                            <a href="#">You have 5 new messages</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">You're now friend with Mike</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wish Mary on her birthday!</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5 warnings in Server Console</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">You have 5 new messages</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Happy Birthday </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5 warnings in Server Console</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5 warnings in Server Console</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5 warnings in Server Console</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5 warnings in Server Console</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5 warnings in Server Console</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5 warnings in Server Console</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5 warnings in Server Console</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <a href="#" class="nav-link">
+                                    <i class='bx bxs-message-dots icon'></i>
+                                    <span class="badge">8</span>
+                                </a>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="material-icons">apps</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="material-icons">person</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="material-icons">settings</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+                   <div class="main">
+
+            <div class="grid-container">
+                <div class="grid-item item-1">
+                    <p class="title">IOD</p>
+                    
+                        <div id="columnchart_material" style="width: 350px; height: 400px;"></div>
+                    <form class="forms">
+                        <select name="Month">
+                            <option value="this month">this month</option>
+                            <option value="january">january</option>
+                            <option value="february">february</option>
+                            <option value="march">march</option>
+                            <option value="april">april</option>
+                            <option value="may">may</option>
+                            <option value="june">june</option>
+                            <option value="july">july</option>
+                            <option value="august">august</option>
+                            <option value="september">september</option>
+                            <option value="october">october</option>
+                            <option value="november">november</option>
+                            <option value="december">december</option>
+                        
+                        </select>
+                    </form>
+                </div>
+                <div class="grid-item item-2">
+                  
+                   
+                   <form class="formz">
+                 
+                    <select name="Month">
+                        <option value="this month">this month</option>
+                        <option value="january">january</option>
+                        <option value="february">february</option>
+                        <option value="march">march</option>
+                        <option value="april">april</option>
+                        <option value="may">may</option>
+                        <option value="june">june</option>
+                        <option value="july">july</option>
+                        <option value="august">august</option>
+                        <option value="september">september</option>
+                        <option value="october">october</option>
+                        <option value="november">november</option>
+                        <option value="december">december</option>
+                    
+                    </select>
+                   
+                    <div id="donutchart" style="width: 300px; height: 230px;"></div>
+                </form>
+                <p class="title">Gender</p>
+                </div>
+                <div class="grid-item item-3">
+                  
+                   <form class="formz">
+                    
+                    <select name="Month">
+                        <option value="this month">this month</option>
+                        <option value="january">january</option>
+                        <option value="february">february</option>
+                        <option value="march">march</option>
+                        <option value="april">april</option>
+                        <option value="may">may</option>
+                        <option value="june">june</option>
+                        <option value="july">july</option>
+                        <option value="august">august</option>
+                        <option value="september">september</option>
+                        <option value="october">october</option>
+                        <option value="november">november</option>
+                        <option value="december">december</option>
+                    
+                    </select>
+                    <div id="piechart" style="width: 300px; height: 200px;"></div>
+                </form>
+                <p class="title">Medicals</p>
+                </div>
+                <div class="grid-item item-4">
+                    <canvas id="myChart" style="height:600px;max-width:600px"></canvas>
+                   <p class="title">Vaccination</p>
+                </div>
+                <div class="grid-item item-5">
+                   <p class="title">Deases</p>
+                   <span class="span">300</span>
+                   <form class="form">
+                    <select name="Month">
+                        <option value="this month">this month</option>
+                        <option value="january">january</option>
+                        <option value="february">february</option>
+                        <option value="march">march</option>
+                        <option value="april">april</option>
+                        <option value="may">may</option>
+                        <option value="june">june</option>
+                        <option value="july">july</option>
+                        <option value="august">august</option>
+                        <option value="september">september</option>
+                        <option value="october">october</option>
+                        <option value="november">november</option>
+                        <option value="december">december</option>
+                    
+                    </select>
+                    
+                </form>
+                </div>
+                <div class="grid-item item-6">
+                    <p class="title">screening</p>
+                    <span class="span">300</span>
+                    <form class="form">
+                        <select name="Month">
+                            <option value="this month">this month</option>
+                            <option value="january">january</option>
+                            <option value="february">february</option>
+                            <option value="march">march</option>
+                            <option value="april">april</option>
+                            <option value="may">may</option>
+                            <option value="june">june</option>
+                            <option value="july">july</option>
+                            <option value="august">august</option>
+                            <option value="september">september</option>
+                            <option value="october">october</option>
+                            <option value="november">november</option>
+                            <option value="december">december</option>
+                        
+                        </select>
+                    </form>
+                  
+                </div>
+                <div class="grid-item item-7">
+                    <p class="title">Unfit Employee</p>
+                   <span class="span">300</span>
+                    <form class="form">
+                        <select name="Month">
+                            <option value="this month">this month</option>
+                            <option value="january">january</option>
+                            <option value="february">february</option>
+                            <option value="march">march</option>
+                            <option value="april">april</option>
+                            <option value="may">may</option>
+                            <option value="june">june</option>
+                            <option value="july">july</option>
+                            <option value="august">august</option>
+                            <option value="september">september</option>
+                            <option value="october">october</option>
+                            <option value="november">november</option>
+                            <option value="december">december</option>
+                        
+                        </select>
+                    </form>
+                  
+                </div>
+                <div class="grid-item item-8">
+                    <p class="title">Fatalities</p>
+                    <span class="span">300</span>
+                    <form class="form">
+                        <select name="Month">
+                            <option value="this month">this month</option>
+                            <option value="january">january</option>
+                            <option value="february">february</option>
+                            <option value="march">march</option>
+                            <option value="april">april</option>
+                            <option value="may">may</option>
+                            <option value="june">june</option>
+                            <option value="july">july</option>
+                            <option value="august">august</option>
+                            <option value="september">september</option>
+                            <option value="october">october</option>
+                            <option value="november">november</option>
+                            <option value="december">december</option>
+                        
+                        </select>
+                    </form>
+                  
+                </div>
+
+
+                <div class="grid-item item-9">
+                    <p class="title">First time visit</p>
+                    <span class="span">300</span>
+                    <form class="form">
+                        <select name="Month">
+                            <option value="this month">this month</option>
+                            <option value="january">january</option>
+                            <option value="february">february</option>
+                            <option value="march">march</option>
+                            <option value="april">april</option>
+                            <option value="may">may</option>
+                            <option value="june">june</option>
+                            <option value="july">july</option>
+                            <option value="august">august</option>
+                            <option value="september">september</option>
+                            <option value="october">october</option>
+                            <option value="november">november</option>
+                            <option value="december">december</option>
+                        
+                        </select>
+                    </form>
+                  
+                </div>
+
+
+                <div class="grid-item item-10">
+                
+                   <p class="title">.</p>
+                   <form class="formx">
+                 
+                    <select name="Month">
+                        <option value="this month">6 Months</option>
+                        <option value="january">january</option>
+                        <option value="february">february</option>
+                        <option value="march">march</option>
+                        <option value="april">april</option>
+                        <option value="may">may</option>
+                        <option value="june">june</option>
+                        <option value="july">july</option>
+                        <option value="august">august</option>
+                        <option value="september">september</option>
+                        <option value="october">october</option>
+                        <option value="november">november</option>
+                        <option value="december">december</option>
+                    
+                    </select>
+                   <div id="curve_chart" style="width: 700px; height: 400px"></div>
+                </div>
+                <div class="grid-item item-11">
+                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    <form class="formx">
+                        <select name="Month">
+                            <option value="this month">for 6 months</option>
+                            <option value="january">january</option>
+                            <option value="february">february</option>
+                            <option value="march">march</option>
+                            <option value="april">april</option>
+                            <option value="may">may</option>
+                            <option value="june">june</option>
+                            <option value="july">july</option>
+                            <option value="august">august</option>
+                            <option value="september">september</option>
+                            <option value="october">october</option>
+                            <option value="november">november</option>
+                            <option value="december">december</option>
+                        
+                        </select>
+                    </form>
+                   <p class="title">Referal</p>
+                </div>
+             </div>
+            </div>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="js/jquery-3.3.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery-3.3.1.min.js"></script>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#sidebarCollapse').on('click', function () {
+                        $('#sidebar').toggleClass('active');
+                        $('#content').toggleClass('active');
+                    });
+
+                    $('.more-button,.body-overlay').on('click', function () {
+                        $('#sidebar,.body-overlay').toggleClass('show-nav');
+                    });
+
+                });
+            </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Man',      22],
+      ['',  32],
+      ['Women',  32]
+      
+    ]);
+
+    var options = {
+      title: '',
+      pieHole: 0.4,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+    chart.draw(data, options);
+  }
+</script>
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['bar']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', '', '', ''],
+      ['2014', 900, 400, 200],
+      ['2015', 1170, 460, 250],
+      ['2016', 660, 1120, 300],
+      ['2017', 1030, 540, 350]
+    ]);
+
+    var options = {
+      chart: {
+        title: 'IOD',
+        subtitle: 'IOD',
+      }
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  }
+</script>
+
+
+
+
+<script>
+    var xValues = ["yellow fever", "covid", "Hepatites", "Monkey pox", ];
+    var yValues = [55, 49, 44, 24,];
+    var barColors = [
+      "#ff9900",
+      "#e60000",
+      "#248f24",
+      "#008ae6",
+      "#e68a00"
+    ];
+    
+    new Chart("myChart", {
+      type: "pie",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+        
+      },
+      options: {
+        title: {
+          display: true,
+          text: ""
+
+        }
+   
+
+      }
+    });
+    </script>
+
+
+
+
+
+<script type="text/javascript">
+    window.onload = function () {
+    
+    var chart = new CanvasJS.Chart("chartContainer", {
+        theme: "light1", // "light2", "dark1", "dark2"
+        animationEnabled: false, // change to true		
+        title:{
+            text: ""
+        },
+        data: [
+        {
+            // Change type to "bar", "area", "spline", "pie",etc.
+            type: "column",
+            dataPoints: [
+                { label: "1",  y: 5  },
+                { label: "2", y: 10  },
+                { label: "3", y: 15  },
+                { label: "4",  y: 20  },
+                { label: "5",  y: 25  }
+            ]
+
+
+            
+        }
+        ]
+    });
+
+  
+    chart.render();
+    var barColors = [
+      "#ff9900",
+      "#e60000",
+      "#248f24",
+      "#008ae6",
+      "#e68a00"
+    ];
+    }
+    </script>
+    </head>
+
+
+
+
+
+
+
+</body>
+
+</html>
